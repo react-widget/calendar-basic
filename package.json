@@ -1,0 +1,73 @@
+{
+	"name": "react-widget-calendar-basic",
+	"version": "0.1.0",
+	"description": "",
+	"main": "cjs/index.js",
+	"module": "esm/index.js",
+	"types": "lib/index.d.ts",
+	"scripts": {
+		"docs": "packez build ./examples/index.js -d docs -c",
+		"start": "tsc -w",
+		"cjs": "transform-es src -d cjs -c -t cjs",
+		"esm": "transform-es src -d esm -c -t esm",
+		"tsc": "tsc",
+		"demo": "packez server ./examples/index.js -d dist -w -c",
+		"test": "jest",
+		"clear": "rimraf lib cjs esm docs dist",
+		"build": "run-s clear tsc cjs esm docs"
+	},
+	"files": [
+		"cjs",
+		"esm",
+		"lib",
+		"*.md"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/react-widget/calendar-basic.git"
+	},
+	"keywords": [],
+	"author": "nobo.zhou@foxmail.com",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/react-widget/calendar-basic/issues"
+	},
+	"homepage": "https://github.com/react-widget/calendar-basic#readme",
+	"peerDependencies": {
+		"react": ">=16.8.0",
+		"react-dom": ">=16.8.0"
+	},
+	"devDependencies": {
+		"@types/enzyme": "^3.10.5",
+		"@types/enzyme-adapter-react-16": "^1.0.6",
+		"@types/jest": "^25.2.1",
+		"@types/react": "^16.9.34",
+		"babel-plugin-search-and-replace": "^1.0.1",
+		"babel-preset-packez": "^1.0.0",
+		"enzyme": "^3.11.0",
+		"enzyme-adapter-react-16": "^1.15.2",
+		"jest": "^25.5.3",
+		"npm-run-all": "^4.1.5",
+		"packez": "^4.1.2",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"rimraf": "^3.0.2",
+		"transform-es": "^5.0.3",
+		"typescript": "^3.8.3"
+	},
+	"dependencies": {
+		"@babel/runtime": "^7.9.6",
+		"bplokjs-calendar-dates": "^0.1.1",
+		"classnames": "^2.2.6",
+		"lodash": "^4.17.15"
+	},
+	"browserslist": [
+		">=0.25%",
+		"not dead",
+		"not op_mini all",
+		"not Android 4.4.3-4.4.4",
+		"not ios_saf < 10",
+		"not Chrome < 50",
+		"firefox ESR"
+	]
+}
