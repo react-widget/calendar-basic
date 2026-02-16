@@ -59,7 +59,7 @@
 		"@babel/runtime": "^7.9.6",
 		"bplokjs-calendar-dates": "^0.1.1",
 		"classnames": "^2.2.6",
-		"lodash": "^4.17.15"
+		"lodash": "^4.17.23"
 	},
 	"browserslist": [
 		">=0.25%",
